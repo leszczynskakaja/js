@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function samochod(samochod_l, kolor_l, rocznik_l){
+                this.samochod=samochod_l;
+                this.kolor=kolor_l;
+                this.rocznik=rocznik_l;
+            }
+            samochod.prototype.napisz = function(){
+                alert(this.samochod+' '+this.kolor+' '+this.rocznik);
+            };
+            var samochod1 = new samochod("volvo", "czarny", "2009");
+            var samochod2 = new samochod("bmw", "czarny", "2011");
+            samochod1.napisz();
+            samochod2.napisz();
+
+        </script>
+    </head>
+    <body>
+        <br><br>
+        Programowanie obiektowe. <br><br>
+        obiekt to samochod<br>
+        pola:<br>
+        samochod<br>
+        kolor<br>
+        rocznik<br>
+    </body>
+</html>
