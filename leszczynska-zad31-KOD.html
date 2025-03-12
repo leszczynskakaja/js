@@ -1,0 +1,35 @@
+
+<textarea>
+<html>
+ <head>
+ <script type="text/javascript">
+var samochod = {
+jaki_samochod: 'bmw',
+kolor: 'czarny',
+rocznik: '2010',
+samochod_wyswietl_les: function ()
+{
+ document.write(this.jaki_samochod + ' ' + this.kolor + ' ' + this.rocznik)
+ }
+}
+samochod.samochod_wyswietl_les();
+samochod.stan="lekko uzyte";
+samochod.samochod_pokaz_les=function() {alert('stan: ' + this.stan + ' ')}
+samochod.samochod_pokaz_les();
+ </script>
+ </head>
+<body>
+<br>
+ Programowanie obiektowe. <br>
+ Obiekt to samochodc<br>
+ Pola:<br>
+ jaki samochod<br>
+ kolor<br>
+ rocznik<br>
+ metoda: <br>
+ samochod_wyswietl_les<br>
+ nowe pole to stan <br>
+ nowa metoda to samochod_pokaz_les();<br>
+</body>
+</html>
+</textarea>
