@@ -1,0 +1,24 @@
+<textarea>
+<html>
+ <head>
+ <script language="JavaScript">
+ function fun_les() 
+ {
+ var x_les = prompt("Podaj kolor", "");
+ if(x_les == 1 || x_les.toLowerCase() == "czerwony") {
+document.write('<h1 style="color:red;">wczytałeś kolor czerwony</h1><br>'); 
+} 
+ else if(x_les == 2 || x_les.toLowerCase() == "niebieski") {
+document.write('<h7 style="color:blue;">wczytałeś kolor niebieski</h7><br>');
+}
+}
+</script>
+<h1 style="color:green;">menu</h1><br><br>
+<h2 style="color:red;">1-czerwony</h2>
+<h2 style="color:blue;">2-niebieski</h2>
+ 
+ <input type="button" name="nazw" value="Oblicz" onclick="fun_les()" />
+
+</body>
+</html>
+</textarea>
