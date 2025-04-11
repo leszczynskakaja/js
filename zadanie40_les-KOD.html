@@ -1,0 +1,96 @@
+        <textarea name="leszczynska" cols="120" rows="29" readonly>
+            <!DOCTYPE html>
+            <html lang="pl">
+            <head>
+                <title>Zadanie JavaScript</title>
+                <meta charset="utf-8">
+                <style>
+                    h1 { text-transform: uppercase; }
+                </style>
+            </head>
+            <body>
+                <h1>Proste działania</h1>
+                <label for="a">Podaj pierwszą liczbę:</label> <input type="number" id="a">
+                <br><br>
+                <label for="b">Podaj drugą liczbę:</label> <input type="number" id="b">
+                <br><br>
+                <input type="button" value="DODAWANIE" onclick="suma_les()">
+                <input type="button" value="ODEJMOWANIE" onclick="roznica_les()">
+                <input type="button" value="MNOŻENIE" onclick="iloczyn_les()">
+                <input type="button" value="DZIELENIE" onclick="iloraz_les()">
+                <input type="button" value="TEORIA-Leszczynska" onclick="teoria_les()">
+                <div id="wynik" style="margin-top:20px;"></div>
+                <script>
+                    function suma_les() {
+                        var a = document.getElementById("a").value;
+                        var b = document.getElementById("b").value;
+                        if (a == "" || b == "") {
+                            document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+                        } else {
+                            a = parseFloat(a);
+                            b = parseFloat(b);
+                            var suma = (a + b).toFixed(2);
+                            document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + suma;
+                        }
+                    }
+                    function roznica_les() {
+                        var a = document.getElementById("a").value;
+                        var b = document.getElementById("b").value;
+                        if (a == "" || b == "") {
+                            document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+                        } else {
+                            a = parseFloat(a);
+                            b = parseFloat(b);
+                            var roznica = (a - b).toFixed(2);
+                            document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + roznica;
+                        }
+                    }
+                    function iloczyn_les() {
+                        var a = document.getElementById("a").value;
+                        var b = document.getElementById("b").value;
+                        if (a == "" || b == "") {
+                            document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+                        } else {
+                            a = parseFloat(a);
+                            b = parseFloat(b);
+                            var iloczyn = (a * b).toFixed(2);
+                            document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + iloczyn;
+                        }
+                    }
+                    function iloraz_les() {
+                        var a = document.getElementById("a").value;
+                        var b = document.getElementById("b").value;
+                        if (a == "" || b == "") {
+                            document.getElementById("wynik").innerHTML = "Proszę uzupełnić obie liczby.";
+                        } else {
+                            a = parseFloat(a);
+                            b = parseFloat(b);
+                            if (b == 0) {
+                                document.getElementById("wynik").innerHTML = "Nie wolno dzielić przez zero.";
+                            } else {
+                                var iloraz = (a / b).toFixed(2);
+                                document.getElementById("wynik").innerHTML = "Wynik działania wynosi: " + iloraz;
+                            }
+                        }
+                    }
+                    function teoria_les() {
+                        document.write("<font color=green size=4>Pierwsza linia teorii</font><br>");
+                        document.write("<font color=red size=4>&lt;label for=\"a\"&gt;Podaj pierwszą liczbę:&lt;/label&gt;&lt;input type=\"number\" id=\"a\"&gt;</font><br>");
+                        document.write("<font color=red size=4>Tworzy pole numeryczne z etykietą.</font><br>");
+                        document.write("<font color=green size=4>Druga linia teorii</font><br>");
+                        document.write("<font color=red size=4>&lt;input type=\"button\" value=\"DODAWANIE\" onclick=\"suma_les()\"&gt;</font><br>");
+                        document.write("<font color=red size=4>Przycisk wywołujący funkcję sumującą.</font><br>");
+                        document.write("<font color=green size=4>Trzecia linia teorii</font><br>");
+                        document.write("<font color=red size=4>var a = document.getElementById(\"a\").value;</font><br>");
+                        document.write("<font color=red size=4>Pobiera wartość z pola input i zapisuje do zmiennej.</font><br>");
+                        document.write("<font color=green size=4>Czwarta linia teorii</font><br>");
+                        document.write("<font color=red size=4>if (a == \"\" || b == \"\")</font><br>");
+                        document.write("<font color=red size=4>Sprawdza, czy pola są puste.</font><br>");
+                        document.write("<font color=green size=4>Piąta linia teorii</font><br>");
+                        document.write("<font color=red size=4>document.getElementById(\"wynik\").innerHTML = \"Wynik działania wynosi: \" + suma;</font><br>");
+                        document.write("<font color=red size=4>Wyświetla wynik operacji w treści strony.</font><br>");
+                    }
+                </script>
+            </body>
+            </html>
+</textarea>
