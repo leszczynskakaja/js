@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Prostokąt z gwiazdek</title>
+  <style>
+    pre {
+      font-family: monospace;
+      font-size: 16px;
+      line-height: 1.2;
+      white-space: pre;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Rysowanie prostokąta z gwiazdek</h2>
+<pre id="wynik"></pre>
+
+<script>
+  const imie = "kaja";
+  const nazwisko = "leszczynska";
+
+  const a_les = (nazwisko.length % 4) + 5;
+  const b_les = (imie.length % 6) + 20;
+
+  let wynik = "";
+
+  for (let i = 0; i < b_les; i++) {
+    wynik += "*";
+  }
+  wynik += "\n";
+
+  for (let i = 0; i < a_les - 2; i++) {
+    wynik += "*";
+    for (let j = 0; j < b_les - 2; j++) {
+      wynik += " ";
+    }
+    wynik += "*\n";
+  }
+
+  // Dolny rząd
+  for (let i = 0; i < b_les; i++) {
+    wynik += "*";
+  }
+  
+  document.getElementById("wynik").textContent = wynik;
+</script>
+
+</body>
+</html>
