@@ -1,0 +1,14 @@
+<html>
+<body>
+<div stle="color:red;font-size:50px;">
+<script language="JavaScript">
+silnia_koniec=parseFloat(prompt("koniec petli",""));
+var silnia_les=1;
+for(i=1;i<=silnia_koniec;i++){
+  silnia_les=silnia_les*i;
+}
+document.write("silnia="+silnia_les);
+</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 45</title>
+</head>
+<body>
+    <script>
+        var i_r = parseInt(prompt("Podaj liczbe:"))
+        var Ile_razy_wyświetlić=10;
+        document.write("<h1>Ile razy wyswietlić: 13</h1><h1>Wielkosc czcionki 41px</h1>");
+        if (i_r %2 ==0){
+            for (; Ile_razy_wyświetlić >= 1; Ile_razy_wyświetlić--) {
+                document.write("<font size=42px color=blue>Leszczynska</font>")
+            }
+        } else{
+            for (; Ile_razy_wyświetlić >= 1; Ile_razy_wyświetlić--) {
+                document.write("<font size=42px color=green>Kaja</font>")
+            }
+        }
+    </script>
+</body>
+</html>
